@@ -9,10 +9,36 @@
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
 
     <script src="js/index.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <div id="root"></div>
+
+    <!-- Table example (table é o container da Tabela) -->
+     <!-- Dentro da table temos th (Table Header), para metermos os "titulos" das colunas-->
+      <!-- Depois temos tr (Table Row), que é a linha da tabela -->
+       <!-- Dentro da tr temos td (Table Data), que é o conteudo da tabela -->
+        <!-- Podemos também usar colspan e rowspan para juntar células -->
+    <table class="table__container" id="table">
+        <th> Coluna 1 </th>
+        <th> Coluna 2</th>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr rowspan="2">    
+            <td colspan="2"> Conteudo centrado </td>
+        </tr>
+    </table>
+
+    <button class="button__container" id="btntest">Click me</button>
+
 </body>
 
 </html>
